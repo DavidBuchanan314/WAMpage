@@ -130,3 +130,6 @@ dmypy.json
 
 # webos stuff
 *.ipk
+
+# binaries
+app/snapshot_blob.bin
