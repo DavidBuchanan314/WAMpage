@@ -1,6 +1,3 @@
-#define xstr(s) str(s)
-#define str(s) #s
-
 .text
 .global _start
 
@@ -34,6 +31,8 @@ _start:
 
 
 prog: .asciz "/usr/bin/python2"
+.align 4
+
 argv: .word 0, 0
 pipefd:
 piperead: .word 0
