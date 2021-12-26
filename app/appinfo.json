@@ -1,0 +1,9 @@
+{
+	"icon": "icon.png",
+	"id": "tv.rootmy.wampage",
+	"main": "index.html",
+	"title": "WAMpage",
+	"type": "web",
+	"version": "0.0.1",
+	"v8SnapshotFile": "snapshot_blob.bin"
+}
