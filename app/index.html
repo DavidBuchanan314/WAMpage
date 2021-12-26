@@ -5,13 +5,24 @@
 			<style>
 					body {
 							color: #FFF;
+							background-color: #000;
+					}
+					#log {
+						font-size: 16pt;
 					}
 			</style>
 	</head>
 	<body>
-			<input type="button" onclick="location.reload();" value="reload" />
-			<input type="button" onclick="pwn();" value="pwnage" />
+			<h1>WAMpage</h1>
+			<h3>WebOS root LPE exploit - <a href="https://github.com/DavidBuchanan314/WAMpage">source</a></h3>
+			<input type="button" onclick="location.reload();" value="Reload Page" />
+			<input type="button" onclick="wampage();" value="Start Exploit" />
 			<pre id="log">Log:</pre>
-			<script src="webosexploit.js"></script>
+
+			<script src="lib/base64binary.js"></script>
+			<script src="lib/logging.js"></script>
+			<script src="lib/stage1_shellcode.js"></script>
+			<script src="lib/stage2_shellcode.js"></script>
+			<script src="wampage.js"></script>
 	</body>
 </html>
