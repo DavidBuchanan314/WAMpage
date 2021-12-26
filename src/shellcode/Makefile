@@ -23,4 +23,4 @@ python_shellcode.bin: python_shellcode_stub.bin ${PYTHON_SOURCE}
 	arm-linux-gnueabi-objcopy -O binary -j .text $< $@
 
 clean:
-	rm -f *.bin *.o
+	rm -f *.bin *.o shellcode_runner

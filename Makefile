@@ -18,7 +18,7 @@ src/shellcode/%: FORCE
 	make -C src/shellcode/ $(notdir $@)
 
 clean: src/shellcode/clean
-	rm -f build/* app/snapshot_blob.bin wampage.ipk
+	rm -f build/* wampage.ipk ${GENERATED}
 
 app/lib/stage2_shellcode.js: src/shellcode/python_shellcode.bin
 	sh -c 'echo "var stage2_shellcode_b64 = \`\n$$(base64 $<)\`;"' > $@
