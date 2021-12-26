@@ -33,6 +33,6 @@ app/lib/stage1_shellcode.js: src/shellcode/shellcode.bin
 	> $@
 
 test: ${GENERATED}
-	./bin/d8.sh app/lib/*.js app/exploit.js
+	./bin/d8.sh app/lib/*.js app/wampage.js
 
 FORCE: ;
