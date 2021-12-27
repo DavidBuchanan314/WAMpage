@@ -67,7 +67,9 @@ visited = set()
 # https://elixir.bootlin.com/linux/v4.4.84/source/include/linux/sched.h#L1390
 def parse_task(addr):
 	if addr in visited:
-		return
+		print("Visited all tasks")
+		raise Exception("Visited all tasks")
+
 	visited.add(addr)
 
 	mem.seek(kern2phys(addr))
@@ -80,7 +82,7 @@ def parse_task(addr):
 	print("this: " + hex(addr))
 	print("pid: " + hex(pid))
 	if pid:
-		print(parse_pid(pid))
+		print(parse_pid(pid)) # TODO: figure out why this doesn't work
 	print("cred: " + hex(cred))
 	print(hex(prev), hex(next))
 
