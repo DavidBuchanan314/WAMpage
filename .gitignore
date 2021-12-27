@@ -14,7 +14,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+#lib/
 lib64/
 parts/
 sdist/
@@ -133,3 +133,4 @@ dmypy.json
 
 # binaries
 app/snapshot_blob.bin
+app/lib/stage*_shellcode.js

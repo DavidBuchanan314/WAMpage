@@ -136,4 +136,6 @@ def get_root():
                 raise Exception("Couldn't find creds")
 
 get_root()
+
+os.system("""luna-send -a wampage -f -n 1 luna://com.webos.notification/createToast '{"sourceId":"wampage","message":"WAMpage: got r00t!"}' &""")
 os.system("telnetd -l /bin/sh -p 31337")
