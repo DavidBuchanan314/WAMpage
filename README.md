@@ -1,7 +1,7 @@
 # WAMpage
 WAMpage - A WebOS root LPE exploit chain
 
-Currently only supports WebOS 4.x on 32-bit SoCs.
+Currently only supports WebOS 4.x on 32-bit SoCs. This software is provided AS IS, use at your own rist, etc. etc.
 
 Writeup: https://www.da.vidbuchanan.co.uk/blog/webos-wampage.html
 
@@ -52,3 +52,7 @@ You can use `ares-install`, or manually copy over the IPK and run this from the 
 ```bash
 luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"tv.rootmy.wampage","ipkUrl":"/path/to/wampage.ipk","subscribe":true}'
 ```
+
+## Running on TV
+
+Launch the app and press the "Start Exploit" button. If all goes well, a telnet server should open up on port 31337.
