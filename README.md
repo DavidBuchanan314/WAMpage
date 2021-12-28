@@ -3,6 +3,8 @@ WAMpage - A WebOS root LPE exploit chain
 
 Currently only supports WebOS 4.x on 32-bit SoCs.
 
+Writeup: https://www.da.vidbuchanan.co.uk/blog/webos-wampage.html
+
 ## Building
 
 Prerequesites:
