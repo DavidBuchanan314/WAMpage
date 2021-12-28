@@ -12,4 +12,4 @@ _start:
 	ldr r0, target
 	mov pc, r0
 
-target: .word 0xdeadbeef
+target: .word 0xdeadbeef @ placeholder
