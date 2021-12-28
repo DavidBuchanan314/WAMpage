@@ -5,6 +5,9 @@ Currently only supports WebOS 4.x on 32-bit SoCs.
 
 Writeup: https://www.da.vidbuchanan.co.uk/blog/webos-wampage.html
 
+![image](https://user-images.githubusercontent.com/13520633/147524216-c9fab6cd-6841-42ab-96b4-b7dd91ff0b23.png)
+
+
 ## Building
 
 Prerequesites:
