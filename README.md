@@ -1,6 +1,8 @@
 # WAMpage
 WAMpage - A WebOS root LPE exploit chain
 
+This exploit is mainly of interest to other researchers - if you just want to root your TV, you probably want [RootMyTV](https://github.com/RootMyTV/RootMyTV.github.io), which offers a reliable 1-click persistent root.
+
 Currently only supports WebOS 4.x on 32-bit SoCs. This software is provided AS IS, use at your own rist, etc. etc.
 
 Writeup: https://www.da.vidbuchanan.co.uk/blog/webos-wampage.html
