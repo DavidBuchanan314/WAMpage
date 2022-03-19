@@ -1,5 +1,5 @@
 # WAMpage
-WAMpage - A WebOS root LPE exploit chain
+WAMpage - A WebOS root LPE exploit chain (CVE-2022-23731)
 
 This exploit is mainly of interest to other researchers - if you just want to root your TV, you probably want [RootMyTV](https://github.com/RootMyTV/RootMyTV.github.io), which offers a reliable 1-click persistent root.
 
